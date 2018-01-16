@@ -1,0 +1,7 @@
+<h1>Here is a list of all our products</h1>
+
+<% @products.each do |product| %>
+	 <h4><%= link_to product.name, one_product_path(id: product.id) %></h4>
+	 <p>Price: <%= number_to_currency(product.price) %>, Category: <%= link_to product.category, category_path(category: product.category) %></p>
+<% end %>	 
+

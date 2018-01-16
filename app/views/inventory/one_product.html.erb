@@ -1,0 +1,6 @@
+<h1> Here is information about <%= @product.name %></h1>
+
+<p>Price: <%= number_to_currency(@product.price) %></p>
+<p>Category: <%= @product.category %></p>
+
+<%= link_to "Back to All Products", all_products_path %>
